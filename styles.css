@@ -1,0 +1,176 @@
+/* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin-left: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.produk-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.produk {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  flex: 1 1 calc(33.333% - 2rem);
+  background: #f9f9f9;
+
+}
+
+.harga {
+  font-weight: bold;
+  color: green;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsif */
+@media (max-width: 1200px) {
+  .produk {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produk {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  header, nav ul {
+    flex-direction: column;
+  }
+
+  header h1, .cart-icon {
+    margin: 0.5rem 0;
+  }
+}
+
+.button {
+    background-color: pink;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.produk {
+    border: 2px solid #000; /* Warna border */
+    padding: 10px;          /* Spasi di dalam border */
+    margin: 15px;          /* Spasi antara produk */
+    display: inline-block;  /* Membuat div berdampingan */
+    width: 100px;          /* Lebar tetap untuk semua produk */
+    text-align: center;     /* Mengatur teks menjadi center */
+}
+
+.produk img {
+    width: 50%;            /* Mengatur gambar agar melebar sesuai parent */
+    height: auto;          /* Menjaga proporsi gambar */
+    display: block;         /* Menghapus jarak di bawah gambar */
+    position: center;
+}
+
+#kontak {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  margin-top: 2rem;
+}
+
+#kontak h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-kontak {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-kontak label {
+  font-weight: bold;
+}
+
+.form-kontak input,
+.form-kontak textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-kontak button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.form-kontak button:hover {
+  background-color: #555;
+}
